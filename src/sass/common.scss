@@ -1,0 +1,43 @@
+@import './variables';
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-poppins;
+    color: $color-gray;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-rendering:optimizeLegibility;
+    background: $color-white;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-weight: 600;
+  }
+  p{
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none !important;
+  }
+  li{
+    list-style: none;
+  }
+a,
+span,
+li,
+p{
+    font-family: $font-poppins;
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1250px !important;
+    }
+}
