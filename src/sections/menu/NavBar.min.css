@@ -1,0 +1,882 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar.sm-navbar {
+  position: relative;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0;
+  /** Desktop **/
+  /** Mobile **/
+}
+.navbar.sm-navbar .navbar-toggler {
+  width: 45px;
+  height: 45px;
+  background: #1265e3;
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+}
+.navbar.sm-navbar .navbar-toggler .line {
+  width: 24px;
+  height: 2px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 4px auto;
+  transition: all 0.3s ease-in-out;
+}
+.navbar.sm-navbar .navbar-toggler:hover {
+  cursor: pointer;
+}
+.navbar.sm-navbar button.navbar-toggler[aria-expanded=true] .line:nth-child(2) {
+  opacity: 0;
+}
+.navbar.sm-navbar button.navbar-toggler[aria-expanded=true] .line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.navbar.sm-navbar button.navbar-toggler[aria-expanded=true] .line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+@media all and (min-width: 992px) {
+  .navbar.sm-navbar {
+    /** Hover **/
+    /** animate css support **/
+    /** end animate css support **/
+  }
+  .navbar.sm-navbar ul.navbar-nav > li {
+    display: inline-block;
+  }
+  .navbar.sm-navbar ul.navbar-nav > li > a {
+    display: block;
+    padding: 25px 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2c3e50;
+  }
+  .navbar.sm-navbar ul.navbar-nav > li > a:hover {
+    color: #2678ff;
+    text-decoration: none;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu {
+    position: relative;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu {
+    min-width: 170px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    list-style: none;
+    padding: 25px 0;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    z-index: 9999;
+    display: none;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu a {
+    display: block;
+    padding: 5px 25px;
+    color: #808080;
+    transition: all 0.3s ease;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu a:hover {
+    color: #2678ff;
+    text-decoration: none;
+    margin-left: 2px;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu ul.sub-menu {
+    top: 0;
+    left: auto;
+    right: 100%;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu {
+    position: static;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu .mega-menu .smm-widget-area {
+    border-top: 1px solid #f0f0f0;
+    background: #ffffff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu {
+    position: relative;
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu ul.sub-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu:hover > a {
+    color: #6fa2f6;
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-megamenu .mega-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-megamenu:hover > .mega-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  .navbar.sm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-megamenu:hover > a {
+    color: #6fa2f6;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu:hover > a {
+    color: #2678ff;
+    text-decoration: none;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+  }
+  .navbar.sm-navbar ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+  }
+  .navbar.sm-navbar.smmNavbar-bounce ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounce 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounce ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounce 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flash ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: flash 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flash ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: flash 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-pulse ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: pulse 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-pulse ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: pulse 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rubberBand ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rubberBand 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rubberBand ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rubberBand 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-shake ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: shake 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-shake ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: shake 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-swing ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: swing 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-swing ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: swing 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-tada ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: tada 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-tada ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: tada 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-wobble ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: wobble 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-wobble ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: wobble 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-jello ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: jello 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-jello ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: jello 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: bounceOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-bounceOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: bounceOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInDownBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInDownBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInDownBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInDownBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInLeftBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInLeftBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInLeftBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInLeftBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInRightBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInRightBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInRightBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInRightBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInUpBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeInUpBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeInUpBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeInUpBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutDownBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutDownBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutDownBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutDownBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutLeftBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutLeftBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutLeftBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutLeftBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutRightBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutRightBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutRightBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutRightBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutUpBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: fadeOutUpBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-fadeOutUpBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: fadeOutUpBig 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flip ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: flip 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flip ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: flip 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipInX ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: flipInX 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipInX ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: flipInX 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipInY ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: flipInY 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipInY ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: flipInY 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipOutX ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: flipOutX 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipOutX ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: flipOutX 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipOutY ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: flipOutY 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-flipOutY ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: flipOutY 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-lightSpeedIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: lightSpeedIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-lightSpeedIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: lightSpeedIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-lightSpeedOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: lightSpeedOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-lightSpeedOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: lightSpeedOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInDownLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateInDownLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInDownLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateInDownLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInDownRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateInDownRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInDownRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateInDownRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInUpLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateInUpLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInUpLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateInUpLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInUpRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateInUpRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateInUpRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateInUpRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutDownLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateOutDownLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutDownLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateOutDownLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutDownRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateOutDownRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutDownRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateOutDownRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutUpLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateOutUpLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutUpLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateOutUpLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutUpRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rotateOutUpRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rotateOutUpRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rotateOutUpRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: slideOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-slideOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: slideOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomIn 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomInDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomInLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomInRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomInUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomOutDown 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomOutLeft 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomOutRight 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: zoomOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-zoomOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: zoomOutUp 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-hinge ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: hinge 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-hinge ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: hinge 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-jackInTheBox ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: jackInTheBox 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-jackInTheBox ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: jackInTheBox 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rollln ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rollln 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rollln ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rollln 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rollOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+    display: block;
+    animation: rollOut 0.3s ease-in;
+  }
+  .navbar.sm-navbar.smmNavbar-rollOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+    display: block;
+    animation: rollOut 0.3s ease-in;
+  }
+}
+@media all and (max-width: 992px) {
+  .navbar.sm-navbar .navbar-brand {
+    margin-left: 15px;
+  }
+  .navbar.sm-navbar .navbar-toggler {
+    margin-right: 15px;
+  }
+  .navbar.sm-navbar .navbar-collapse {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #FBFBFB;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 9999;
+  }
+  .navbar.sm-navbar ul.navbar-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar.sm-navbar ul.navbar-nav li {
+    padding: 7px 0;
+  }
+  .navbar.sm-navbar ul.navbar-nav li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #2c3e50;
+  }
+  .navbar.sm-navbar ul.navbar-nav li:last-child {
+    border-bottom: 0;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu {
+    position: relative;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav {
+    display: block !important;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 18px;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #2c3e50;
+    margin-bottom: -15px;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon:after {
+    content: "";
+    display: block;
+    width: 2px;
+    margin-left: 15px;
+    height: 30px;
+    background: #2c3e50;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu {
+    display: none;
+    list-style: none;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-submenu.sub-open > a.slicknav .icon:after {
+    opacity: 0;
+    /* IE 9 */
+    /* Safari 3-8 */
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu {
+    position: relative;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav {
+    display: block !important;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 18px;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #2c3e50;
+    margin-bottom: -15px;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon:after {
+    content: "";
+    display: block;
+    width: 2px;
+    margin-left: 15px;
+    height: 30px;
+    background: #2c3e50;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu .mega-menu {
+    display: none;
+    list-style: none;
+  }
+  .navbar.sm-navbar ul.navbar-nav li.has-menu-item-megamenu.sub-open > a.slicknav .icon:after {
+    opacity: 0;
+    /* IE 9 */
+    /* Safari 3-8 */
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+  }
+}
