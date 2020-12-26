@@ -8,12 +8,12 @@ export default class Routers extends Component {
     render() {
         return (
             <>
-                <Router>
-                    <NavBar sticky="top"/>
-                    <Switch>
-                        <Route exect path="/" Component={Home}/>
-                    </Switch>
-                </Router>
+            <Router>
+                <NavBar sticky="top"/>
+                <Switch>
+                    <Route exect path="/" Component={Home}/>
+                </Switch>
+            </Router>
             </>
         )
     }
