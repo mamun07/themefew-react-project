@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import Hero from '../../sections/hero/Hero'
+
 import './Home.min.css'
 
 export default class Home extends Component {
@@ -7,15 +8,7 @@ export default class Home extends Component {
         return (
             <>
             <div className="entry-slider-area">
-                <Container>
-                    <Row>
-                        <Col md={12}>
-                            <div className="slider-title">
-                                <p>This area for slider</p>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
+                <Hero />
             </div>
             </>
         )

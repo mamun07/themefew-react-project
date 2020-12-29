@@ -1,10 +1,41 @@
 @import '../sass/variables';
+.navbar.sm-navbar.removebg {
+    background: $color-blue1;
+    position: fixed;
+    border-bottom: none;
+    box-shadow: 0px 1px 4px -3px #000000ab;
+	transition: 0.6s;
+	top:35px;
+	z-index: 2;
+	li{
+		a{
+			color: $color-border !important;
+		}
+		ul{
+			li{
+				a{
+					color: $color-black !important;
+					svg{
+						color: $color-black !important;
+					}
+				}
+			}
+		}
+	}
+	a.navbar-brand img {
+		filter: invert(1) !important;
+	}
+}
 
 .navbar.sm-navbar {
-	position: relative;
+    position: fixed;
+    width: 100%;
 	background: #ffffff;
 	border-bottom: 1px solid $color-border;
 	padding: 0;
+	transition: 0.6s;
+	top:0px;
+	z-index: 2;
 	.navbar-toggler {
 		width: 45px;
 		height: 45px;
@@ -23,14 +54,12 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
-
 	.navbar-toggler:hover{
 	  cursor: pointer;
 	}
 	button.navbar-toggler[aria-expanded="true"] .line:nth-child(2){
 	  opacity: 0;
 	}
-
 	button.navbar-toggler[aria-expanded="true"] .line:nth-child(1){
 	  -webkit-transform: translateY(6px) rotate(45deg);
 	  -ms-transform: translateY(6px) rotate(45deg);
@@ -44,7 +73,6 @@
 	  -o-transform: translateY(-6px) rotate(-45deg);
 	  transform: translateY(-6px) rotate(-45deg);
 	}
-
 	/** Desktop **/
 	@media all and (min-width: 992px) {
 		ul.navbar-nav {

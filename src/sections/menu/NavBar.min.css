@@ -1,9 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar.sm-navbar.removebg {
+  background: #1029b7;
+  position: fixed;
+  border-bottom: none;
+  box-shadow: 0px 1px 4px -3px #000000ab;
+  transition: 0.6s;
+  top: 35px;
+  z-index: 2;
+}
+.navbar.sm-navbar.removebg li a {
+  color: #f0f0f0 !important;
+}
+.navbar.sm-navbar.removebg li ul li a {
+  color: #2c3e50 !important;
+}
+.navbar.sm-navbar.removebg li ul li a svg {
+  color: #2c3e50 !important;
+}
+.navbar.sm-navbar.removebg a.navbar-brand img {
+  filter: invert(1) !important;
+}
+
 .navbar.sm-navbar {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background: #ffffff;
   border-bottom: 1px solid #f0f0f0;
   padding: 0;
+  transition: 0.6s;
+  top: 0px;
+  z-index: 2;
   /** Desktop **/
   /** Mobile **/
 }

@@ -7,7 +7,7 @@ export default class Ourteam extends Component {
     render() {
         return (
             <>
-            <div className="entry-team-page">
+            <div className="entry-team-page mt100">
                 <Container>
                     <Row>
                         <Col md={12}>

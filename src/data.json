@@ -1,0 +1,29 @@
+{
+    "name": "Themedew data",
+    "slider_datas" :
+    [
+        {
+            "id": 1,
+            "title":"Start your Business with ThemeFew",
+            "sub_title":"React with ThemeFew",
+            "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, veritatis corrupti asperiores commodi aperiam nulla.",
+            "images": "https://themelayer.net/wp/theme/wp-kalkulat/wp-content/uploads/2020/05/Image-BG.png",
+            "link": "/about"
+        },
+        {
+            "id": 2,
+            "title":"Start your Mobile Apps ThemeFew",
+            "sub_title":"Mobile React App",
+            "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, veritatis corrupti asperiores commodi aperiam nulla.",
+            "images": "https://res2.weblium.site/res/5c8f43f8cb380a0025cbf010/5cb851d07b0ced0023a3b0b8_optimized_656_e671x595-7x6",
+            "link":"/about"
+        }
+    ],
+    "about_page_data":
+    [
+        {
+            "id":1,
+            "title": "this is about title"
+        }
+    ]
+}

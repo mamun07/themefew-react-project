@@ -7,7 +7,7 @@ export default class Contactus extends Component {
     render() {
         return (
             <>
-            <div className="entry-contact-page">
+            <div className="entry-contact-page mt100">
                 <Container>
                     <Row>
                         <Col md={12}>

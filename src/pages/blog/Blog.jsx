@@ -7,7 +7,7 @@ export default class Blog extends Component {
     render() {
         return (
             <>
-            <div className="entry-blog-page">
+            <div className="entry-blog-page mt100">
                 <Container>
                     <Row>
                         <Col md={8}>

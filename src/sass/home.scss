@@ -1,0 +1,21 @@
+.entry-slider-area{
+    background-image: url(../../assets/images/few-bg.png);
+    padding: 150px 0 0 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .owl-theme .owl-dots .owl-dot {
+        .owl-dot.active{
+            &:focus{
+                outline: none !important;
+            }
+        }
+        span {
+            width: 20px;
+            height: 8px;
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+}
