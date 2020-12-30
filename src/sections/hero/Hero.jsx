@@ -13,24 +13,23 @@ export default class Hero extends Component {
         const H6text = styled.h6`
             color: #e4e4e4;
             margin: 0 0 10px 0;
-            text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 16px;
         `
         const H2text = styled.h2`
             color: #fff;
-            font-size: 55px;
-            line-height: 70px;
-            margin: 0 0 30px 0;
+            font-size: 50px;
+            line-height: 60px;
+            margin: 0 0 25px 0;
             font-weight: bolder;
             letter-spacing: 1px;
         `
         const Ptext = styled.p`
         color: #e4e4e4;
-        margin: 0 0 20px 0;
+        margin: 0 0 10px 0;
         letter-spacing: 1px;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 24px;
         `
         
         const sildermap = sliderdata.slider_datas.map((slider_list)=>{

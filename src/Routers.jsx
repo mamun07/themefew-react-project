@@ -9,22 +9,30 @@ import Contactus from './pages/contact/Contactus'
 import Blog from './pages/blog/Blog'
 import Ourteam from './pages/ourteam/Ourteam'
 import Portfolio from './pages/portfolio/Portfolio'
+import Footer from './sections/footer/Footer'
 
 export default class Routers extends Component {
     render() {
         return (
             <>
             <Router>
-                <HeaderTop/>
-                <NavBar/>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/contact-us" component={Contactus} />
-                    <Route exact path="/blog" component={Blog} />
-                    <Route exact path="/our-team" component={Ourteam} />
-                    <Route exact path="/portfolio" component={Portfolio} />
-                </Switch>
+                <div className="header-area">
+                    <HeaderTop/>
+                    <NavBar/>
+                </div>
+                <div className="body-main-area">
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/contact-us" component={Contactus} />
+                        <Route exact path="/blog" component={Blog} />
+                        <Route exact path="/our-team" component={Ourteam} />
+                        <Route exact path="/portfolio" component={Portfolio} />
+                    </Switch>
+                </div>
+                <div className="footer-area">
+                    <Footer/>
+                </div>
             </Router>
             </>
         )
